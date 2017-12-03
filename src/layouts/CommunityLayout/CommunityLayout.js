@@ -7,20 +7,21 @@
  * 
  */
 
-import './Login.css'
+import './CommunityLayout.css'
 import React, { Component } from 'react'
 
-class Login extends Component {
+class CommunityLayout extends Component {
   static propTypes = {
 
   }
   render() {
     return (
-      <div className="Login">
-        Login
+      <div className="CommunityLayout">
+        CommunityLayout
+        {this.props.children}
       </div>
     )
   }
 }
 
-export default Login
+export default CommunityLayout

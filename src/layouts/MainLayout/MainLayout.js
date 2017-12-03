@@ -1,5 +1,5 @@
 /**
- * Copyright 2017-present, Company Name, Inc
+ * Copyright 2017-present, wecash, Inc
  * 
  * This source code is licensed under the GNU GENERAL PUBLIC LICENSE found in the
  * LICENSE file in the root directory of this source tree. An additional grant
@@ -7,21 +7,21 @@
  * 
  */
 
-import './Layout.css'
+import './MainLayout.css'
 import React, { Component } from 'react'
 
-class Layout extends Component {
+class MainLayout extends Component {
   static propTypes = {
 
   }
   render() {
     return (
-      <div className="Layout">
-      layout
-      {this.props.children}
+      <div className="MainLayout">
+        MainLayout
+        {this.props.children}
       </div>
     )
   }
 }
 
-export default Layout
+export default MainLayout

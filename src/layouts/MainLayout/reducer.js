@@ -1,5 +1,5 @@
 /**
- * Copyright 2017-present, Company Name, Inc
+ * Copyright 2017-present, wecash, Inc
  * 
  * This source code is licensed under the GNU GENERAL PUBLIC LICENSE found in the
  * LICENSE file in the root directory of this source tree. An additional grant
@@ -7,17 +7,17 @@
  * 
  */
 
-import { injectReducer } from '../store'
+import { injectReducer } from '../../store'
 
 // ────────────────────────────────────────────────────────────────────────────────
 // module name and default path name
 // ────────────────────────────────────────────────────────────────────────────────
-export const MODULE_NAME = 'layout'
+export const MODULE_NAME = 'MainLayout'
 
 // ────────────────────────────────────────────────────────────────────────────────
-// The action name starts with a Layout
+// The action name starts with a MainLayout
 // ────────────────────────────────────────────────────────────────────────────────
-const LayoutNAME = 'LayoutNAME'
+const MainLayoutNAME = 'MainLayoutNAME'
 
 // ────────────────────────────────────────────────────────────────────────────────
 // Initial State
@@ -28,7 +28,7 @@ const initialState = {}
 // Actions handles
 // ────────────────────────────────────────────────────────────────────────────────
 const ActionHandles = {
-  [LayoutNAME]: (state, action) => Object.assign({}, state)
+  [MainLayoutNAME]: (state, action) => Object.assign({}, state)
 }
 
 // ────────────────────────────────────────────────────────────────────────────────
@@ -49,14 +49,14 @@ export const mapStateToProps = (state) => {
 
 export const mapActionsToProps = {
   FuncName: (value) => ({
-    type: LayoutNAME,
+    type: MainLayoutNAME,
     data: value
   }),
   AsyncFuncName: () => {
     return (dispatch) => {
       setTimeout(() => {
         dispatch({
-          type: LayoutNAME,
+          type: MainLayoutNAME,
           data: ''
         })
       }, 50)

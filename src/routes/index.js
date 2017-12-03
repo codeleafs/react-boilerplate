@@ -10,12 +10,18 @@
 import React from 'react'
 import { Switch, Route } from 'react-router'
 
-import Layout from '../Layout'
+import CommunityLayout from '../layouts/CommunityLayout'
+import MainLayout from '../layouts/MainLayout'
 import login from './Login'
 import home from './Home'
 import about from './About'
 
-const insetRoutes = [
+const comunityRoutes = [
+  about,
+  home
+]
+
+const mainRoutes = [
   about,
   home
 ]
@@ -23,6 +29,15 @@ const insetRoutes = [
 export default (
   <Switch>
     <Route {...login} />
-    <Route render={props => (<Layout {...props}>{insetRoutes.map(r => <Route {...r} />)}</Layout>)} />
+    <Route path="/comunity" render={props => (
+      <CommunityLayout {...props}>
+      {comunityRoutes.map(r => <Route {...r} />)}
+      </CommunityLayout>
+    )}/>
+    <Route path="/" render={props => (
+      <MainLayout {...props}>
+      {mainRoutes.map(r => <Route {...r} />)}
+      </MainLayout>
+    )}/>
   </Switch>
 )

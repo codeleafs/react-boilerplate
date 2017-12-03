@@ -12,12 +12,12 @@ import { injectReducer } from '../../store'
 // ────────────────────────────────────────────────────────────────────────────────
 // module name and default path name
 // ────────────────────────────────────────────────────────────────────────────────
-export const MODULE_NAME = 'login'
+export const MODULE_NAME = 'CommunityLayout'
 
 // ────────────────────────────────────────────────────────────────────────────────
-// The action name starts with a Login
+// The action name starts with a CommunityLayout
 // ────────────────────────────────────────────────────────────────────────────────
-const LoginNAME = 'LoginNAME'
+const CommunityLayoutNAME = 'CommunityLayoutNAME'
 
 // ────────────────────────────────────────────────────────────────────────────────
 // Initial State
@@ -28,7 +28,7 @@ const initialState = {}
 // Actions handles
 // ────────────────────────────────────────────────────────────────────────────────
 const ActionHandles = {
-  [LoginNAME]: (state, action) => Object.assign({}, state)
+  [CommunityLayoutNAME]: (state, action) => Object.assign({}, state)
 }
 
 // ────────────────────────────────────────────────────────────────────────────────
@@ -49,14 +49,14 @@ export const mapStateToProps = (state) => {
 
 export const mapActionsToProps = {
   FuncName: (value) => ({
-    type: LoginNAME,
+    type: CommunityLayoutNAME,
     data: value
   }),
   AsyncFuncName: () => {
     return (dispatch) => {
       setTimeout(() => {
         dispatch({
-          type: LoginNAME,
+          type: CommunityLayoutNAME,
           data: ''
         })
       }, 50)
