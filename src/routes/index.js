@@ -17,12 +17,10 @@ import home from './Home'
 import about from './About'
 
 const comunityRoutes = [
-  about,
-  home
+  about
 ]
 
 const mainRoutes = [
-  about,
   home
 ]
 

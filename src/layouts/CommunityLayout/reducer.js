@@ -34,10 +34,7 @@ const ActionHandles = {
 // ────────────────────────────────────────────────────────────────────────────────
 // Reducer
 // ────────────────────────────────────────────────────────────────────────────────
-injectReducer(MODULE_NAME, (state = initialState, action) => {
-  const handler = ActionHandles[action.type]
-  return handler ? handler(state, action) : state
-})
+injectReducer(MODULE_NAME, initialState, ActionHandles)
 
 // ────────────────────────────────────────────────────────────────────────────────
 // The actions will map to component
