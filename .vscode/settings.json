@@ -1,0 +1,14 @@
+{
+  "git.ignoreLimitWarning": true,
+  "generate-react-component.conditionals": [
+    "class"
+  ],
+  "generate-react-component.componentTemplatePath": ".vscode/componentTemplate",
+  "generate-react-component.containerTemplatePath": ".vscode/containerTemplate",
+  "licenser.license": "Custom",
+  "licenser.author": "Company Name",
+  "licenser.projectName": "react-redux-boilerplate",
+  "licenser.useSingleLineStyle": false,
+  "licenser.customTermsAndConditions": "Copyright @YEAR@-present, @AUTHOR@, Inc.\n\n All rights reserved.\n\n",
+  "licenser.customHeader": "Copyright @YEAR@-present, @AUTHOR@, Inc\n\nThis source code is licensed under the GNU GENERAL PUBLIC LICENSE found in the\nLICENSE file in the root directory of this source tree. An additional grant\nof patent rights can be found in the PATENTS file in the same directory.\n"
+}
